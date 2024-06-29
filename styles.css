@@ -5,7 +5,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('bg.webp') black;
+    background: url('bg.png') black;
     background-size: cover;
     background-repeat: no-repeat;
 }
