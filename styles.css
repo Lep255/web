@@ -17,6 +17,7 @@ body {
     overflow: hidden;
     position: relative;
     transform-style: preserve-3d; /* Ensures children elements are rendered in 3D */
+    perspective: 1000px; /* Perspective for 3D effect */
 }
 
 .circle::before {
@@ -27,9 +28,10 @@ body {
     width: calc(100% - 20px); /* Adjust size to accommodate shadow */
     height: calc(100% - 20px); /* Adjust size to accommodate shadow */
     border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent shadow color */
+    background-color: rgba(0, 0, 0, 0.6); /* Stronger shadow color */
     z-index: -1; /* Move behind the video */
-    filter: blur(10px); /* Blur effect to enhance shadow */
+    filter: blur(15px); /* Increased blur effect for a softer shadow */
+    transform: rotateY(10deg) rotateX(10deg) scale(1.05); /* Additional 3D transformation */
 }
 
 .circle video {
