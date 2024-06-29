@@ -16,27 +16,25 @@ body {
     border-radius: 50%;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.5); /* Increased and more visible shadow */
+    transform-style: preserve-3d; /* Ensures children elements are rendered in 3D */
 }
 
 .circle::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 10px; /* Adjust position to create a shadow effect */
+    left: 10px; /* Adjust position to create a shadow effect */
+    width: calc(100% - 20px); /* Adjust size to accommodate shadow */
+    height: calc(100% - 20px); /* Adjust size to accommodate shadow */
     border-radius: 50%;
-    background-color: black;
-    transform: perspective(800px) rotateX(30deg); /* Increased 3D effect */
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent shadow color */
     z-index: -1; /* Move behind the video */
-    opacity: 0.8; /* Adjusted opacity for a visible effect */
+    filter: blur(10px); /* Blur effect to enhance shadow */
 }
 
 .circle video {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: relative; /* Ensure video stays on top */
     border-radius: 50%; /* Ensure the video clips to the circle shape */
 }
