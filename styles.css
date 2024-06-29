@@ -15,10 +15,6 @@ body {
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black; /* Optional: a fallback color */
     position: relative;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adding a shadow */
 }
@@ -37,9 +33,8 @@ body {
 }
 
 .circle video {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     position: relative; /* Ensure video stays on top */
-    z-index: 1; /* Ensure video stays on top */
 }
