@@ -16,22 +16,10 @@ body {
     border-radius: 50%;
     overflow: hidden;
     position: relative;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6); /* Shadow around the circle */
     transform-style: preserve-3d; /* Ensures children elements are rendered in 3D */
     perspective: 2000px; /* Perspective for strong 3D effect */
-}
-
-.circle::before {
-    content: '';
-    position: absolute;
-    top: 20px; /* Adjust position to create a shadow effect */
-    left: 20px; /* Adjust position to create a shadow effect */
-    width: calc(100% - 40px); /* Adjust size to accommodate shadow */
-    height: calc(100% - 40px); /* Adjust size to accommodate shadow */
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.8); /* Stronger and more opaque shadow color */
-    z-index: -1; /* Move behind the video */
-    filter: blur(20px); /* Increased blur effect for a softer shadow */
-    transform: rotateY(30deg) rotateX(30deg) scale(1.2); /* Stronger 3D transformation */
+    transform: rotateY(30deg) rotateX(30deg) scale(1.2); /* 3D transformation */
 }
 
 .circle video {
