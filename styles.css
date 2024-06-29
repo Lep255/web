@@ -28,8 +28,9 @@ body {
     height: 100%;
     border-radius: 50%;
     background-color: black;
-    transform: perspective(1000px) rotateX(20deg); /* Adding a 3D effect */
+    transform: perspective(100px) rotateX(20deg); /* Adding a slight 3D effect */
     z-index: -1; /* Move behind the video */
+    opacity: 0.6; /* Adjust transparency for a subtle effect */
 }
 
 .circle video {
@@ -37,4 +38,5 @@ body {
     height: 100%;
     object-fit: cover;
     position: relative; /* Ensure video stays on top */
+    border-radius: 50%; /* Ensure the video clips to the circle shape */
 }
