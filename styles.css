@@ -13,7 +13,7 @@ body {
 .circle {
     width: 200px;
     height: 200px;
-    border-radius: 50%;
+    border-radius: 90%;
     overflow: hidden;
     position: relative;
     box-shadow: 0 0 300px rgba(0, 0, 0, 0.5); /* Shadow with 50% opacity */
