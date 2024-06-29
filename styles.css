@@ -6,8 +6,8 @@ body {
     justify-content: center;
     align-items: center;
     background: url('bg.png') black;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: auto;
+    background-repeat: repeat;
 }
 
 .circle {
