@@ -20,6 +20,8 @@ body {
     align-items: center;
     background-color: black; /* Optional: a fallback color */
     position: relative;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adding a shadow */
+    transform: perspective(1000px) rotateX(20deg); /* Adding a 3D effect */
 }
 
 .circle video {
