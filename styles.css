@@ -21,11 +21,25 @@ body {
     background-color: black; /* Optional: a fallback color */
     position: relative;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adding a shadow */
+}
+
+.circle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: black;
     transform: perspective(1000px) rotateX(20deg); /* Adding a 3D effect */
+    z-index: -1; /* Move behind the video */
 }
 
 .circle video {
     width: 200px;
     height: 200px;
     object-fit: cover;
+    position: relative; /* Ensure video stays on top */
+    z-index: 1; /* Ensure video stays on top */
 }
