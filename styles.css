@@ -5,7 +5,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('path-to-your-texture.jpg') black;
+    background: url('bg.webp') black;
     background-size: cover;
     background-repeat: no-repeat;
 }
