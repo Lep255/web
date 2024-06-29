@@ -19,7 +19,7 @@ body {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.6); /* Shadow around the circle */
     transform-style: preserve-3d; /* Ensures children elements are rendered in 3D */
     perspective: 2000px; /* Perspective for strong 3D effect */
-    transform: rotateY(30deg) rotateX(30deg) scale(1.2); /* 3D transformation */
+    transform: rotateY(350deg) rotateX(30deg) scale(1.2); /* 3D transformation */
 }
 
 .circle video {
