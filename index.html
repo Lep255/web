@@ -13,19 +13,19 @@
     justify-content: center;
     align-items: center;
     background-image: url('images/bg.jpg'); /* Tiled background image */
-    background-size: auto; /* Adjust size based on image */
+    background-size: cover; /* Ensure the background image covers the screen */
   }
   .circle-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 35vmin; /* Increased size to accommodate shadow */
-    height: 35vmin; /* Increased size to accommodate shadow */
+    width: 35vw; /* Adjust size for better responsiveness */
+    height: 35vw; /* Adjust size for better responsiveness */
     position: relative;
   }
   .circle {
-    width: 30vmin; /* Size of the circle */
-    height: 30vmin; /* Size of the circle */
+    width: 30vw; /* Size of the circle */
+    height: 30vw; /* Size of the circle */
     border-radius: 50%; /* Make it round */
     overflow: hidden; /* Hide overflow for perfect circle */
     position: relative; /* Allow absolute positioning */
@@ -39,7 +39,7 @@
     transform: translate(-50%, -50%);
     width: 100%; /* Fit video to the circle */
     height: 100%; /* Fit video to the circle */
-    object-fit:cover; /* Ensure video covers entire area */
+    object-fit: cover; /* Ensure video covers entire area */
     border-radius: 50%; /* Make video round */
   }
 </style>
@@ -47,7 +47,7 @@
 <body>
   <div class="circle-container">
     <div class="circle">
-      <video autoplay muted loop>
+      <video autoplay muted loop playsinline>
         <source src="videos/1.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
