@@ -13,34 +13,36 @@
     justify-content: center;
     align-items: center;
     background-image: url('images/bg.jpg');
-    background-size: cover; /* Ensure the background image covers the screen */
+    background-size: cover;
   }
   .circle-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 35vw; /* Adjust size for better responsiveness */
-    height: 35vw; /* Adjust size for better responsiveness */
+    width: 35vw;
+    height: 35vw;
     position: relative;
   }
   .circle {
-    width: 30vw; /* Size of the circle */
-    height: 30vw; /* Size of the circle */
-    border-radius: 50%; /* Make it round */
-    overflow: hidden; /* Hide overflow for perfect circle */
-    position: relative; /* Allow absolute positioning */
-    background: linear-gradient(0deg, hwb(0 0% 100%), hsla(0, 0%, 0%, 0.7)); /* Light gradient for 3D effect */
-    box-shadow: 0px 0px 25px rgba(125, 0, 155, 0.7); /* Shadow for 3D effect */
+    width: 30vmin; /* Changed from vw to vmin for better proportionality */
+    height: 30vmin; /* Changed from vw to vmin for better proportionality */
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(0deg, hwb(0 0% 100%), hsla(0, 0%, 0%, 0.7));
+    box-shadow: 0px 0px 25px rgba(125, 0, 155, 0.7);
   }
   .circle video {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1.1); /* Center and slightly scale the video */
-    width: auto; /* Ensure the aspect ratio is maintained */
-    height: 100%; /* Cover the entire circle area */
-    object-fit: cover; /* Ensure video covers entire area */
-    border-radius: 50%; /* Make video round */
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
   }
 </style>
 </head>
