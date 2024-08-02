@@ -8,11 +8,11 @@
   body, html {
     height: 100%;
     margin: 0;
-    overflow: hidden; /* Hide overflow to prevent scrollbars */
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('images/bg.jpg'); /* Tiled background image */
+    background-image: url('images/bg.jpg');
     background-size: cover; /* Ensure the background image covers the screen */
   }
   .circle-container {
@@ -36,9 +36,9 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%; /* Fit video to the circle */
-    height: 100%; /* Fit video to the circle */
+    transform: translate(-50%, -50%) scale(1.1); /* Center and slightly scale the video */
+    width: auto; /* Ensure the aspect ratio is maintained */
+    height: 100%; /* Cover the entire circle area */
     object-fit: cover; /* Ensure video covers entire area */
     border-radius: 50%; /* Make video round */
   }
